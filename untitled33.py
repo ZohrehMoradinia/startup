@@ -1,13 +1,38 @@
 
-
-
-#pip install streamlit
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import pickleimport streamlit as st
+import pandas as pd
+#import matplotlib.pyplot as plt
+import numpy as np
 import pickle
+import pymoo
+from pymoo.core.problem import Problem
+from pymoo.algorithms.moo.nsga2 import NSGA2
+#from pymoo.factory import get_sampling, get_crossover, get_mutation
+from pymoo.core.mixed import MixedVariableMating, MixedVariableGA, MixedVariableSampling, MixedVariableDuplicateElimination
+from pymoo.optimize import minimize
+from pymoo.core.variable import Real, Integer
+from pymoo.core.problem import ElementwiseProblem
+from pymoo.visualization.scatter import Scatter
+from pymoo.util.ref_dirs import get_reference_directions
+import matplotlib.pyplot as plt
+import warnings
+from pymoo.problems import get_problem
+warnings.filterwarnings("ignore")
+from pymoo.core.callback import Callback
+import numpy as np
+from scipy.interpolate import griddata
+from scipy.interpolate import interpn
+import pandas as pd
+import csv
+import os
+from pymoo.termination import get_termination
+from pymoo.termination.robust import RobustTermination
+from pymoo.termination.ftol import MultiObjectiveSpaceTermination
+import io
 
 
 
