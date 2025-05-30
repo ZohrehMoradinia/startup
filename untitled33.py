@@ -9,7 +9,7 @@ import pandas as pd
 #import matplotlib.pyplot as plt
 import numpy as np
 
-import pymoo
+#import pymoo
 from pymoo.core.problem import Problem
 from pymoo.algorithms.moo.nsga2 import NSGA2
 #from pymoo.factory import get_sampling, get_crossover, get_mutation
